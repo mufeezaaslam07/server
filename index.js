@@ -31,6 +31,10 @@ configurePassport();
 // Routes
 app.use("/api/auth", authRoutes);
 
+app.get("/main", (req, res) => {
+  res.send("Deplyment successfull");
+});
+
 // Protected routes
 app.use(
   "/api/tasks",
